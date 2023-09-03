@@ -4,7 +4,7 @@
     "r2":"2 clases",
     "r3":"3 clase",
     "r4":"particular",
-    "r5":"clase de visita",
+    "r5":"clase de visita"
 },
 {
     "titulo":"Precios",
@@ -12,18 +12,18 @@
     "r2":"$355 mensuales",
     "r3":"$450 mensuales",
     "r4":"$170 mensuales",
-    "r5":"$100 por visita",
+    "r5":"$100 por visita"
 },
 {
     "titulo":"Clases",
     "r1":"4 clases",
     "r2":"8 clases",
-    "r3":"12 clases",
+    "r3":"12 clases"
 },
 {
     "titulo":"Precios",
     "r1":"$80 mensuales",
     "r2":"$1060 mensuales",
-    "r3":"$1460 mensuales",
+    "r3":"$1460 mensuales"
 }
 ]
