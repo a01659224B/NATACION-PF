@@ -1,30 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import { RouterLink, RouterView} from 'vue-router'
-import ImagenPrincipal from '../components/icons/ImagenPrincipal.vue'
+import Adultos from '../views/Adultos.vue'
+import Bebe from '../views/Bebe.vue'
+import Ninos from '../views/Ninos.vue'
+// import { RouterLink, RouterView} from 'vue-router'
+// import ImagenPrincipal from '../components/icons/ImagenPrincipal.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'Adultos',
+    component: Adultos
+  },
+  {
+    path: '/',
+    name: 'Bebe',
+    component: Bebe
+  },
+  {
+    path: '/',
+    name: 'Ninos',
+    component: Ninos
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/ImagenPrincipal',
-      name: 'ImagenPrincipal',
-      component: () => import('../icons/ImagenPrincipal.vue')
-    }
-  ]
+  routes
 })
 
 export default router
