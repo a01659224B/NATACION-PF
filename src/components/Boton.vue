@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      buttonText: "Conoce Más",
+      buttonText: "Precio",
       clicked: false
     };
   },
