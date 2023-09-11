@@ -53,13 +53,7 @@ import Encabezado from './components/Encabezado.vue';
           </ul>
       </div>
   </nav>
-  
-  
-  
-
-
-
-
+ 
 
   </body>
   <router-view/>
