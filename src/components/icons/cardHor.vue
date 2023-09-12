@@ -1,20 +1,35 @@
 <div class="row">
-    <div class="col-sm-6 mb-3 mb-sm-0">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="card text-bg-primary text-center">
+      <div class="card-body">
+        <h5 class="card-title">NIÑOS</h5>
+        <a href="#" class="btn btn-warning">Lun a Viern</a>
+        <br>
+        <br>
+        <a href="#" class="btn btn-warning">Sab. Dom.</a>
       </div>
     </div>
   </div>
+  <div class="col-sm-4">
+    <div class="card text-bg-primary text-center">
+      <div class="card-body">
+        <h5 class="card-title">ADULTOS</h5>
+        <a href="#" class="btn btn-warning">Lun a Viern</a>
+        <br>
+        <br>
+        <a href="#" class="btn btn-warning">Sab. Dom.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-bg-primary text-center">
+      <div class="card-body">
+        <h5 class="card-title">BEBES</h5>
+        <a href="#" class="btn btn-warning">Lun a Viern</a>
+        <br>
+        <br>
+        <a href="#" class="btn btn-warning">Sab. Dom.</a>
+      </div>
+    </div>
+  </div>
+</div>
