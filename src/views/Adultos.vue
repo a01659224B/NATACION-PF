@@ -1,3 +1,6 @@
+<script setup>
+</script> 
+
 <template> 
     <div class="container">
         <table class="table table-bordered border-primary">

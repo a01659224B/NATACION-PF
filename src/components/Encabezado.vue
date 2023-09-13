@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div class="cont">
       <div class="item"> 
@@ -8,32 +11,25 @@
       </div>
   </div>
   
-    
-      <div class="container2">
-          <div class="left">
-              <div class="left-inner">
-                  <div>
-                    <img src="src/components/imagenes/na-pn (1).png">
-                  </div>
-                  <div class="texto1">
-                    Nada... 
-                  </div>
-                  <div class="texto2">
-                    Nada...Por salud, deporte o
-                  </div>
-                  <div class="texto1">
-                    para salvar tu vida. 
-                  </div>
-            </div>
+  <div class="container2">
+    <div class="left">
+      <div class="left-inner">
+        <div>
+          <img src="src/components/imagenes/na-pn (1).png">
         </div>
-      <div class="right">
-        <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg">
-     </div>
+        <div class="texto1">Nada... </div>
+        <div class="texto2">Nada... Por salud, deporte o</div>
+        <div class="texto1">para salvar tu vida. </div>
+      </div>
     </div>
+    <div class="right">
+        <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg">
+    </div>
+  </div>
     
-    <nav class="navbar navbar-expand-lg bc-azul">
-      <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+  <nav class="navbar navbar-expand-lg bc-azul">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-3">
             <a class="nav-link t-amarillo" href="#">Nosotros</a>
           </li>
@@ -180,10 +176,5 @@
       font-size: 30px;
     }
     </style>
-    
-    <!-- <script>
-    export default{
-      name:'Encabezado'
-    }
-    </script> -->
+
 

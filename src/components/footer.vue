@@ -30,6 +30,7 @@
         align-items: center;
         padding: 10px 20px;
         position: relative; /* Permite posicionar las líneas */
+        font-family: 'Montserrat', sans-serif;
     }
     
     .footer-logo img {
