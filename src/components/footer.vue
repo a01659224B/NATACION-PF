@@ -15,7 +15,7 @@
         <a href="https://www.facebook.com/people/naatare/100063567849186/?mibextid=ZbWKwL" target="_blank" class="social-link">
         <i class="fab fa-facebook icon"></i>
         </a>
-    <a href="https://www.tiktok.com/tucuenta" target="_blank" class="social-link">
+    <a href="https://www.tiktok.com/@naatare2650?_t=8fglDaJ4t7d&_r=1" target="_blank" class="social-link">
         <i class="fab fa-tiktok icon"></i>
     </a>
 </div>
@@ -70,10 +70,10 @@
     font-family: 'Averia Serif Libre', cursive;
 }
 
-/* Estilos para los enlaces de redes sociales */
+
 .social-link {
-  color: white; /* Color azul para los enlaces (puedes cambiarlo según tu preferencia) */
-  margin-right: 20px; /* Agrega un espacio entre los enlaces */
+    color: white; 
+    margin-right: 20px; 
 }
 
 </style>
