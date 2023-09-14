@@ -51,7 +51,8 @@
     
     <style>
     body{
-        background-color: #3C469E;
+        background: linear-gradient(to bottom, #3C469E, #3771C8, #FFFFFF);
+        min-height: 100vh; /* Asegura que el degradado ocupe todo el alto de la ventana */
       }
       .item {
         color: #3C469E;
