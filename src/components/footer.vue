@@ -32,7 +32,7 @@
     }
     
     .footer-logo img {
-        max-height: 40px;
+        max-height: 70px;
     }
     
     .footer-social a {
