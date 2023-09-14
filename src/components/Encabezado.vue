@@ -1,4 +1,6 @@
+
 <script setup>
+
 </script>
 
 <template>
@@ -56,7 +58,7 @@
         padding: 1%;
         display: flex;
         justify-content: flex-end;
-        font-family: 'Montserrat', sans-serif;
+        font-family:'Montserrat', sans-serif
   
     }
     .item a {
@@ -175,6 +177,7 @@
     .fs-30{
       font-size: 30px;
     }
+
     </style>
 
 
