@@ -1,56 +1,79 @@
 <template>
     <footer class="footer">
-        <div class="footer-logo">
-            
-            <img src="src/components/imagenes/na-pn (1).png" alt="Logo" />
+        <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-2">
+            <img src="src/components/imagenes/na-pn (1).png" alt="Logo">
+            </div> 
+            <div class="col order-5 text-left"><h4>REDES</h4>
+        <a href="https://t.me/tucanal" target="_blank" class="social-link">
+    <i class="fab fa-telegram icon"></i>
+    </a>
+    <a href="https://wa.me/tunumero" target="_blank" class="social-link">
+        <i class="fab fa-whatsapp icon"></i>
+    </a>
+        <a href="https://www.facebook.com/people/naatare/100063567849186/?mibextid=ZbWKwL" target="_blank" class="social-link">
+        <i class="fab fa-facebook icon"></i>
+        </a>
+    <a href="https://www.tiktok.com/tucuenta" target="_blank" class="social-link">
+        <i class="fab fa-tiktok icon"></i>
+    </a>
+</div>
+    <div class="col order-1 text-center">
+        <router-link to="/ubicacion" class="text-decoration-none text-dark">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>UBICACIÓN</h4>
+            <p>Av. Tonaltecas 2650, Arboledas de San Gaspar, 45410 Tonalá, Jal.</p>
+            </router-link>
         </div>
-        <div class="footer-social">
-            
-            <p>REDES SOCIALES</p>
-            <a href="https://t.me/tucanal" target="_blank"><i class="fab fa-telegram"></i></a>
-            <a href="https://wa.me/tunumero" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-        <div class="footer-links">
-            <p>UBICACION</p>
-            <router-link to="/ubicacion">Av. Tonaltecas 2650, Arboledas de San Gaspar, 45410 Tonalá, Jal.</router-link>
-        </div>
-        <p>Naatare - © 2023 Todos los derechos reservados</p>
+        <p class="mt-3">© 2023 Naatare. Todos los derechos reservados.</p>
+    </div>
     </footer>
-    </template>
+</template>
+
+<style>
+.footer {
+    background-color: #3771C8;
+    padding: 20px 0;
+}
+
+.footer img {
+    max-width: 100px;
+}
+
+.footer a i {
+    font-size: 24px;
+    margin-right: 10px;
     
-    <style scoped>
-    .footer {
-        background-color: #3771C8; 
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        position: relative; 
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .footer-logo img {
-        max-height: 70px;
-    }
-    
-    .footer-social a {
-        color: #fff;
-        margin-right: 10px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    
-    .footer-links a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    
-    p{
-        color:#EBE741
-        
-    }
-    
-    </style>
+}
+.footer a i:hover {
+    color: purple;
+}
+
+.footer h4 {
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    color:#EBE741;
+}
+
+.footer p {
+    color:white;
+    font-size: 18px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.footer p.mt-3 {
+    margin-top: 10px;
+    color:white;
+    font-size: 15px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-link {
+  color: white; /* Color azul para los enlaces (puedes cambiarlo según tu preferencia) */
+  margin-right: 20px; /* Agrega un espacio entre los enlaces */
+}
+
+</style>
