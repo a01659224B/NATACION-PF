@@ -38,13 +38,13 @@
 
 <style scoped>
 .container {
-  text-align: center; /* Centrar la tabla en el cuerpo */
-  margin-top: 20px; /* Añadir espacio superior */
+  text-align: center; 
+  margin-top: 20px; 
 }
 
 .table {
-  width: 50%; /* Hacer la tabla más pequeña */
-  border-width: 200px; /* Aumentar el ancho del borde */
+  width: 50%; 
+  border-width: 200px; 
 }
 </style>
 
