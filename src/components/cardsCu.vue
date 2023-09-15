@@ -6,10 +6,10 @@ import { RouterLink, RouterView } from 'vue-router';
 <div class="cursos">
     <h3>Cursos</h3>
     <div class="container text-center">
-        <div class="row justify-content-md-center">
+        <div class="row">
 
     <div class="col">
-        <div class="card">
+        <div class="card tarjeta">
             <img src="src/components/imagenes/22221495_1494986850591554_5286114235300830434_n.jpg" class="card-img-top" alt="...">
         <div class="card-body bc-azul text-center">
         <h5 class="card-title">Natacion Niños</h5>
@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router';
         </div>
 
     <div class="col">
-        <div class="card">
+        <div class="card tarjeta">
     <img src="src/components/imagenes/21728814_1473610312729208_566200209273822402_o.jpg" class="card-img-top" alt="...">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Adultos</h5>
@@ -34,17 +34,18 @@ import { RouterLink, RouterView } from 'vue-router';
 
         </button>
     </div>
+
 </div>
     </div>
     <div class="col">
-        <div class="card col">
+        <div class="card tarjeta">
     <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg" class="card-img-top" alt="...">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Bebes</h5>
     <button
         class="custom-btn"
         @click="handleClick"
-        > <RouterLink :to="{ name: 'Bebe' }">Conoce más</RouterLink>
+        > <RouterLink to="Bebe">Conoce más</RouterLink>
         </button>
     </div>
         </div>
@@ -52,9 +53,14 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
 </div>
 </div>
+<RouterView/>
 </template>
 
 <style>
+.row{
+    align-items: baseline;
+    justify-content: space-between;
+}
 .btn{
     background-color:#EBE741;
 }
@@ -70,14 +76,7 @@ import { RouterLink, RouterView } from 'vue-router';
  
 .card col{
     padding:0px;
-    margin:0;
-    text-align: center;
-    align-items: center;
-}
-.card{
-    width: 18rem;
-    padding:0px;
-    margin:0;
+    margin:0px;
 }
 
 .card-title{

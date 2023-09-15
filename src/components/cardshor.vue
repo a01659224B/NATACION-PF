@@ -4,7 +4,7 @@
 <template>
   <div class="horarios">
     <h3>Horarios</h3>
-    <div class="row d-flex justify-content-around">
+    <div class="row justify-content-space-evenly">
       <div class="col-sm-4 mb-3">
         <div class="card text-center">
           <div class="card-body bc-azuloscuro">
@@ -25,14 +25,13 @@
         </div>
       </div>
       <div class="col-sm-4 mb-3">
-        <!-- Center this card using offset -->
-        <div class=" cardd1 offset-sm-4 card text-center">
+        <div class=" cardd1 offset card text-center">
           <div class="card-body bc-azuloscuro">
             <h5 class="card-title">ADULTOS</h5>
             <button
         class="custom-btn"
         @click="handleClick"
-        > <RouterLink to="/Ninos">Conoce más</RouterLink>
+        > <RouterLink to="/Ninos">Lunes a Viernes</RouterLink>
         </button>
             <br>
             <br>
@@ -51,7 +50,7 @@
             <button
         class="custom-btn"
         @click="handleClick"
-        > <RouterLink to="/Ninos">Conoce más</RouterLink>
+        > <RouterLink to="/Ninos">Lunes a Viernes</RouterLink>
         </button>
             <br>
             <br>
@@ -83,10 +82,6 @@
 }
 .bc-azuloscuro{
       background-color: #3C469E;}
-    
-.card{
-    width: 18rem;
-}
 
 .card-title{
     font-family: 'Averia Serif Libre', cursive;;
@@ -109,13 +104,6 @@
     font-family:  'Montserrat', sans-serif;
     color:#3C469E;
     text-decoration: none;
-}
-
-@media (min-width: 576px) {
-  .offset-sm-4 {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 </style>

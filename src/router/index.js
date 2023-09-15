@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Adultos from '../views/Adultos.vue'
-import Bebe from '../views/Bebe.vue'
-import Ninos from '../views/Ninos.vue'
+import Home from '../views/Home.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home
+    },
     {
       path: '/Bebe',
       name: 'Bebe',
