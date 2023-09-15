@@ -7,7 +7,7 @@
   <div class="cont">
       <div class="item"> 
           <a class="nav-link t-azul" href="#"><i class="fab fa-whatsapp"></i></a> 
-          <a class="nav-link t-azul bc-amarillo" href="#"><i class="fab fa-facebook"></i></a>  
+          <a class="nav-link t-azul bc-amarillo" href="https://www.facebook.com/people/naatare/100063567849186/?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>  
           <a class="nav-link t-azul bc-amarillo" href="#"><i class="fab fa-telegram"></i></a> 
           <a class="nav-link t-azul bc-amarillo" href="#">Contáctanos</a> 
       </div>
@@ -51,7 +51,8 @@
     
     <style>
     body{
-        background-color: #3C469E;
+        background: linear-gradient(to bottom, #3C469E, #3771C8, #FFFFFF);
+        min-height: 100vh; /* Asegura que el degradado ocupe todo el alto de la ventana */
       }
       .item {
         color: #3C469E;
