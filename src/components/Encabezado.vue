@@ -33,13 +33,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="#">Nosotros</a>
+            <a class="nav-link t-amarillo" href="nosotros">Nosotros</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="#">Cursos</a>
+            <a class="nav-link t-amarillo" href="cardscu.vue">Cursos</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="#">Horarios</a>
+            <a class="nav-link t-amarillo" href="cardcshor.vue">Horarios</a>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link t-amarillo" href="#">Requisitos</a>
@@ -52,7 +52,7 @@
     <style>
     body{
         background: linear-gradient(to bottom, #3C469E, #3771C8, #FFFFFF);
-        min-height: 100vh; /* Asegura que el degradado ocupe todo el alto de la ventana */
+        min-height: 100vh; 
       }
       .item {
         color: #3C469E;
@@ -177,6 +177,23 @@
     }
     .fs-30{
       font-size: 30px;
+    }
+    .custom-btn {
+        background-color: #EBE741; 
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out; 
+    }
+    
+    .custom-btn:hover {
+        background-color: #9D1C9E; 
+    }
+    
+    .custom-btn:focus {
+        outline: none; 
     }
 
     </style>
