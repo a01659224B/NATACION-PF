@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink} from 'vue-router';
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
     <div class="col">
         <div class="card tarjeta">
-            <img src="src/components/imagenes/22221495_1494986850591554_5286114235300830434_n.jpg" class="card-img-top" alt="...">
+            <img src="src/assets/imagenes/Ninos.jpg" class="card-img-top" alt="Niños nadando">
         <div class="card-body bc-azul text-center">
         <h5 class="card-title">Natacion Niños</h5>
         <button
@@ -24,14 +24,13 @@ import { RouterLink, RouterView } from 'vue-router';
 
     <div class="col">
         <div class="card tarjeta">
-    <img src="src/components/imagenes/21728814_1473610312729208_566200209273822402_o.jpg" class="card-img-top" alt="...">
+    <img src="src/assets/imagenes/AdultoMayor.jpg" class="card-img-top" alt="Adulto Mayor nadando">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Adultos</h5>
     <button
         class="custom-btn"
-        @click="handleClick"
-        > <RouterLink :to="{ name: 'Adultos' }">Conoce más</RouterLink>
-
+        @click="handleClick">
+        <RouterLink to="/adultos">Conoce más</RouterLink>
         </button>
     </div>
 
@@ -39,7 +38,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
     <div class="col">
         <div class="card tarjeta">
-    <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg" class="card-img-top" alt="...">
+    <img src="src/assets/imagenes/Bebe.jpg" class="card-img-top" alt="Bebe nadando">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Bebes</h5>
     <button
@@ -53,7 +52,6 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
 </div>
 </div>
-<RouterView/>
 </template>
 
 <style>
@@ -86,7 +84,7 @@ import { RouterLink, RouterView } from 'vue-router';
 .cursos h3{
     margin-top: 2%;
     margin-bottom: 1%;
-    color:#3C469E;
+    color: white;
     font-family: 'Averia Serif Libre', cursive;;
     text-align: center;
     justify-content: space-evenly;
@@ -100,6 +98,11 @@ import { RouterLink, RouterView } from 'vue-router';
     text-decoration: none;
     font-family:  'Montserrat', sans-serif;
     color:#3C469E;
+}
+.card{
+    border:none;
+    box-shadow: none; 
+    background-color: transparent;
 }
 
 </style>

@@ -3,7 +3,7 @@
         <div class="container text-center">
         <div class="row align-items-center">
             <div class="col-2">
-            <img src="src/components/imagenes/na-pn (1).png" alt="Logo">
+            <img src="src/assets/imagenes/LogoColor.png" alt="Logo">
             </div> 
             <div class="col order-5 text-left"><h4>REDES</h4>
         <a href="https://t.me/tucanal" target="_blank" class="social-link">
@@ -20,11 +20,9 @@
     </a>
 </div>
     <div class="col order-1 text-center">
-        <router-link to="/ubicacion" class="text-decoration-none text-dark">
             <i class="fas fa-map-marker-alt"></i>
             <h4>UBICACIÓN</h4>
             <p>Av. Tonaltecas 2650, Arboledas de San Gaspar, 45410 Tonalá, Jal.</p>
-            </router-link>
         </div>
         </div>
         <p class="mt-3">© 2023 Naatare. Todos los derechos reservados.</p>

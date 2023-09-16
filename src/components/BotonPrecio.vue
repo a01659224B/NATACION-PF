@@ -2,16 +2,17 @@
     export default {
     data() {
         return {
-        buttonText: "Precio",
+        buttonText: "Precios",
         clicked: false
         };
     },
     
     };
     </script>
+
     <template>
         <button
-        class="custom-btn"
+        class="custom-btn BtnPrecio"
         @click="handleClick"
         >
         {{ buttonText }}
@@ -19,7 +20,7 @@
     </template>
     
     <style scoped>
-    .custom-btn {
+.custom-btn {
         background-color: #EBE741;
         color: #000; 
         border: none;
@@ -27,6 +28,7 @@
         padding: 10px 20px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out; 
+        align-content: center;
     }
     
     .custom-btn:hover {

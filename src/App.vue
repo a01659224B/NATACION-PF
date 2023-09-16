@@ -1,19 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
-import encabezado from './components/encabezado.vue';
-import Nosotros from './components/Nosotros.vue';
-import cardshor from './components/cardshor.vue';
-import cardscu from './components/cardscu.vue';
-import pie from './components/pie.vue';
+import { RouterView } from 'vue-router'
+import Encabezado from './components/Encabezado.vue'
+import Pie from './components/Pie.vue'
 
 </script> 
 
 <template> 
-<encabezado></encabezado>
-<Nosotros></Nosotros>
-<cardscu></cardscu>
-<cardshor></cardshor>
-<pie></pie>
+<Encabezado></Encabezado>
+<RouterView></RouterView>
+<Pie></Pie>
 </template>
 
 

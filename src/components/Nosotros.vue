@@ -4,11 +4,11 @@
 <template>
 <div class="container3">
     <h3>Nosotros</h3>
-    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+    <p>Queremos compartir contigo nuestra pasión por el agua y la natación, así como destacar los valores y la misión que nos impulsan a ser tu destino preferido para disfrutar de esta maravillosa actividad.Nos enorgullecemos de contar con un equipo de instructores altamente calificados y apasionados por su trabajo. Cada uno de ellos está comprometido en brindarte la mejor experiencia de aprendizaje y acondicionamiento físico en el agua. Nuestro objetivo es no solo enseñarte a nadar de manera segura y eficiente, sino también inspirarte a amar y respetar el entorno acuático.</p>
     <div class="container4">
-      <img src="src/components/imagenes/21728814_1473610312729208_566200209273822402_o.jpg">
-      <img src="src/components/imagenes/22221495_1494986850591554_5286114235300830434_n.jpg">
-      <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg">
+      <img src="src/assets/imagenes/BajoAgua.png">
+      <img src="src/assets/imagenes/Locker.png">
+      <img src="src/assets/imagenes/Piscina.png">
     </div>
   </div>
 </template>
@@ -41,7 +41,7 @@
 
 }
 .container4 img{
-    width: 15%;
+    width: 8%;
     margin-right: 10px; 
 }
 

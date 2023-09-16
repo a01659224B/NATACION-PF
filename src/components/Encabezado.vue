@@ -1,15 +1,13 @@
-
 <script setup>
-
 </script>
 
 <template>
   <div class="cont">
       <div class="item"> 
-          <a class="nav-link t-azul" href="#"><i class="fab fa-whatsapp"></i></a> 
+          <a class="nav-link t-azul" href="https://api.whatsapp.com/message/VBKARA2FRKLYH1?autoload=1&app_absent=0"><i class="fab fa-whatsapp"></i></a> 
           <a class="nav-link t-azul bc-amarillo" href="https://www.facebook.com/people/naatare/100063567849186/?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>  
-          <a class="nav-link t-azul bc-amarillo" href="#"><i class="fab fa-telegram"></i></a> 
-          <a class="nav-link t-azul bc-amarillo" href="#">Contáctanos</a> 
+          <a class="nav-link t-azul bc-amarillo" href="https://www.instagram.com/Naatare2650/?fbclid=IwAR3OwfUe6PPPIOX4Kk6B05KAsXeYeBiVcNk76v-JR6gp6NRdYZmMtAq2VH8"><i class="fab fa-instagram"></i></a> 
+          <a class="nav-link t-azul bc-amarillo" href="https://api.whatsapp.com/message/VBKARA2FRKLYH1?autoload=1&app_absent=0">Contáctanos</a> 
       </div>
   </div>
   
@@ -17,7 +15,7 @@
     <div class="left">
       <div class="left-inner">
         <div>
-          <img src="src/components/imagenes/na-pn (1).png">
+          <img src="src/assets/imagenes/LogoColor.png">
         </div>
         <div class="texto1">Nada... </div>
         <div class="texto2">Nada... Por salud, deporte o</div>
@@ -25,28 +23,32 @@
       </div>
     </div>
     <div class="right">
-        <img src="src/components/imagenes/273209402_4785210898235783_6528893329297105951_n.jpg">
+        <img src="src/assets/imagenes/Bebe.jpg">
     </div>
   </div>
     
   <nav class="navbar navbar-expand-lg bc-azul">
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="cardscu.vue">Cursos</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="cardcshor.vue">Horarios</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link t-amarillo" href="#">Requisitos</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item mx-3">
+        <RouterLink class="nav-link t-amarillo" to="/">Inicio</RouterLink>
+      </li>
+      <li class="nav-item mx-3">
+        <RouterLink class="nav-link t-amarillo" to="Ninos">Niños</RouterLink>
+      </li>
+      <li class="nav-item mx-3">
+        <RouterLink class="nav-link t-amarillo" to="Adultos">Adultos</RouterLink>
+      </li>
+      <li class="nav-item mx-3">
+        <RouterLink class="nav-link t-amarillo" to="Bebe">Bebés</RouterLink>
+      </li>
+    </ul>
+  </div>
+</nav>
     </template>
     
     <style>
