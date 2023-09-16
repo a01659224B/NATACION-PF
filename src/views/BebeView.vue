@@ -4,13 +4,19 @@ import BotonPrecio from '../components/BotonPrecio.vue';
 import BotonHorario from '../components/BotonHorario.vue';
 
 const jsonLink = 'https://raw.githubusercontent.com/dulcek96/API/main/naatare.json';
+const jsonLink2 = 'https://raw.githubusercontent.com/dulcek96/API/main/natareH.json';
 let baby = ref([]);
-let baby_vip = ref([]);
+let bebesh = ref([]);
 
 fetch(jsonLink)
   .then((res) => res.json())
   .then((data) => {
     baby.value = data.baby;
+  });
+  fetch(jsonLink2)
+  .then((res) => res.json())
+  .then((data2) => {
+    bebesh.value = data2.bebesh;
   });
 </script>
 
@@ -26,7 +32,7 @@ fetch(jsonLink)
     <p>Por lo general, las clases de natación para bebés suelen estar diseñadas para edades comprendidas entre los 6 meses a los 3 años.</p>
     <div class="grid-container">
       <BotonPrecio :baby="baby"></BotonPrecio>
-    <BotonHorario></BotonHorario>
+    <BotonHorario :bebesh="bebesh"></BotonHorario>
   </div>
 </div>
 </template> 

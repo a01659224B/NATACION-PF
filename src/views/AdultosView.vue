@@ -4,8 +4,10 @@ import BotonPrecio from '../components/BotonPrecio.vue'
 import BotonHorario from '../components/BotonHorario.vue';
 import BotonVip from '../components/BotonVip.vue';
 const jsonLink = 'https://raw.githubusercontent.com/dulcek96/API/main/naatare.json';
+const jsonLink2 = 'https://raw.githubusercontent.com/dulcek96/API/main/natareH.json';
 let adults = ref([]);
 let adults_vip = ref([]);
+let adultosh = ref([]);
 
 fetch(jsonLink)
   .then((res) => res.json())
@@ -13,7 +15,11 @@ fetch(jsonLink)
     adults.value = data.adults;
     adults_vip.value= data.adults_vip;
   });
-
+  fetch(jsonLink2)
+  .then((res) => res.json())
+  .then((data2) => {
+    adultosh.value = data2.adultosh;
+  });
 </script> 
 
 <template> 
@@ -30,7 +36,7 @@ fetch(jsonLink)
     <div class="grid-container">
     <BotonPrecio :adults="adults"></BotonPrecio>
     <BotonVip :adults_vip="adults_vip"></BotonVip>
-    <BotonHorario></BotonHorario>
+    <BotonHorario :adultosh="adultosh"></BotonHorario>
   </div>
 </div>
 </template> 
@@ -38,11 +44,8 @@ fetch(jsonLink)
 <style scoped>
     .grid-container {
       display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  justify-items: center;
-  align-items: center;
-  height: 100vh;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+      grid-gap: 10px; /* Espacio entre las celdas */
     }
 .AH31{
     color:#EBE741;

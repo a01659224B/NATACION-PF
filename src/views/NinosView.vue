@@ -5,14 +5,21 @@ import BotonHorario from '../components/BotonHorario.vue';
 import BotonVip from '../components/BotonVip.vue';
 
 const jsonLink = 'https://raw.githubusercontent.com/dulcek96/API/main/naatare.json';
+const jsonLink2 = 'https://raw.githubusercontent.com/dulcek96/API/main/natareH.json';
 let children = ref([]);
 let children_vip = ref([]);
+let ninosh= ref([]);
 
 fetch(jsonLink)
   .then((res) => res.json())
   .then((data) => {
     children.value = data.children;
     children_vip.value=data.children_vip;
+  });
+  fetch(jsonLink2)
+  .then((res) => res.json())
+  .then((data2) => {
+    ninosh.value = data2.ninosh;
   });
 </script>
 
@@ -28,7 +35,7 @@ fetch(jsonLink)
     <div class="grid-container">
       <BotonPrecio :children="children"></BotonPrecio>
       <BotonVip :children_vip="children_vip"></BotonVip>
-      <BotonHorario></BotonHorario>
+      <BotonHorario :ninosh="ninosh"></BotonHorario>
     </div>
   </div>
 </template>

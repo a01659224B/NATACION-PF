@@ -1,4 +1,20 @@
 <script setup>
+import { ref } from 'vue';
+import BotonHorario from './BotonHorario.vue';
+
+const jsonLink2 = 'https://raw.githubusercontent.com/dulcek96/API/main/natareH.json';
+let bebesh = ref([]);
+let adultosh = ref([]);
+let ninosh= ref([]);
+
+fetch(jsonLink2)
+  .then((res) => res.json())
+  .then((data2) => {
+    ninosh.value = data2.ninosh;
+    bebesh.value = data2.bebesh;
+    adultosh.value = data2.adultosh;
+  });
+
 </script>
 
 <template>
@@ -9,18 +25,7 @@
         <div class="card text-center">
           <div class="card-body bc-azuloscuro">
             <h5 class="card-title">NIÑOS</h5>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Lunes a Viernes</RouterLink>
-        </button>
-            <br>
-            <br>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Sábado a Domingo</RouterLink>
-        </button>
+            <BotonHorario :ninosh="ninosh"></BotonHorario>
           </div>
         </div>
       </div>
@@ -28,18 +33,7 @@
         <div class=" cardd1 offset card text-center">
           <div class="card-body bc-azuloscuro">
             <h5 class="card-title">ADULTOS</h5>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Lunes a Viernes</RouterLink>
-        </button>
-            <br>
-            <br>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Sábado a Domingo</RouterLink>
-        </button>
+            <BotonHorario :adultosh="adultosh"></BotonHorario>
           </div>
         </div>
       </div>
@@ -47,18 +41,7 @@
         <div class="card text-center">
           <div class="card-body bc-azuloscuro">
             <h5 class="card-title">BEBES</h5>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Lunes a Viernes</RouterLink>
-        </button>
-            <br>
-            <br>
-            <button
-        class="custom-btn"
-        @click="handleClick"
-        > <RouterLink to="/Ninos">Sábado a Domingo</RouterLink>
-        </button>
+            <BotonHorario :bebesh="bebesh"></BotonHorario>
           </div>
         </div>
       </div>

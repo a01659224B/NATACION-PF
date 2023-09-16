@@ -1,25 +1,79 @@
-<script>
-export default {
-data() {
-    return {
-    buttonText: "Horarios",
-    clicked: false
-    };
-},
-
-};
-</script>
-
 <template>
-    <button
-    class="custom-btn"
-    @click="handleClick"
-    >
-    {{ buttonText }}
-    </button>
-</template>
+    <div>
+      <button class="custom-btn BtnPrecio" @click="showTableData">
+        {{ buttonText }}
+      </button>
+  
+      <table v-if="showTable">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr v-for="item in adultosh" :key="item.dias">
+            <td>{{ item.dias }}</td>
+            <td>{{ item.horario }}</td>
+          </tr>
+          <tr v-for="item in ninosh" :key="item.dias">
+            <td>{{ item.dias }}</td>
+            <td>{{ item.horario }}</td>
+          </tr>
+          <tr v-for="item in bebesh" :key="item.dias">
+            <td>{{ item.dias }}</td>
+            <td>{{ item.horario }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        buttonText: "Horarios",
+        showTable: false, 
+      };
+    },
+    methods: {
+      showTableData() {
+        this.showTable = true; 
+      },
+    },
+    props: {
+      ninosh: Array, 
+      adultosh: Array,
+      bebesh: Array
+    },
+  };
+  </script>
 
 <style scoped>
+table {
+margin-top: 3%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
 .custom-btn {
     background-color: #EBE741;
     color: #000; 
