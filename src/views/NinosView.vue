@@ -1,29 +1,43 @@
- <script setup>
+<script setup>
+import { ref } from 'vue';
 import BotonPrecio from '../components/BotonPrecio.vue';
 import BotonHorario from '../components/BotonHorario.vue';
-</script> 
+import BotonVip from '../components/BotonVip.vue';
 
-<template> 
-<div class="A1">
+const jsonLink = 'https://raw.githubusercontent.com/dulcek96/API/main/naatare.json';
+let children = ref([]);
+let children_vip = ref([]);
+
+fetch(jsonLink)
+  .then((res) => res.json())
+  .then((data) => {
+    children.value = data.children;
+    children_vip.value=data.children_vip;
+  });
+</script>
+
+<template>
+  <div class="A1">
     <h3 class="AH31">Clases de Natacion</h3>
-    <h3 class="AH32">para niños  </h3>
+    <h3 class="AH32">para niños</h3>
     <p>Nuestras clases de natación para niños son un espacio de diversión y aprendizaje seguro en el agua. Diseñadas especialmente para los más pequeños, nuestras clases fomentan la confianza en el agua, enseñan habilidades fundamentales de natación y promueven la diversión mientras se adquieren conocimientos esenciales para una vida acuática segura y saludable. Nuestros instructores altamente capacitados se dedican a crear un ambiente amigable y alentador que inspira a los niños a desarrollar una conexión positiva con el agua desde una edad temprana. ¡Bienvenidos a un mundo de aventura acuática y aprendizaje emocionante para los más jóvenes!</p>
     <div class="A14">
       <img src="src/assets/imagenes/Ninos.jpg">
     </div>
     <p>Por lo general, las clases de natación para niños suelen estar diseñadas para niños de edades comprendidas entre los 3 años y los 12 años. Sin embargo, esta edad puede variar según la política y enfoque de la instalación o programa de natación específico. </p>
     <div class="grid-container">
-    <BotonPrecio></BotonPrecio>
-    <BotonHorario></BotonHorario>
+      <BotonPrecio :children="children"></BotonPrecio>
+      <BotonVip :children_vip="children_vip"></BotonVip>
+      <BotonHorario></BotonHorario>
+    </div>
   </div>
-</div>
-</template> 
+</template>
 
 <style scoped>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-      grid-gap: 10px; /* Espacio entre las celdas */
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 10px; 
     }
 .AH31{
     color:#EBE741;

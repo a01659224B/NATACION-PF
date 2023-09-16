@@ -12,16 +12,12 @@
           </tr>
         </thead>
         <tbody>
-            <tr v-for="item in adults" :key="item.class">
-            <td>{{ item.class }}</td>
+            <tr v-for="item in adults_vip" :key="item.class_vip">
+            <td>{{ item.class_vip }}</td>
             <td>{{ item.price }}</td>
           </tr>
-          <tr v-for="item in children" :key="item.class">
-            <td>{{ item.class }}</td>
-            <td>{{ item.price }}</td>
-          </tr>
-          <tr v-for="item in baby" :key="item.class">
-            <td>{{ item.class }}</td>
+          <tr v-for="item in children_vip" :key="item.class_vip">
+            <td>{{ item.class_vip }}</td>
             <td>{{ item.price }}</td>
           </tr>
         </tbody>
@@ -33,7 +29,7 @@
   export default {
     data() {
       return {
-        buttonText: "Precios",
+        buttonText: "Precios VIP",
         showTable: false, 
       };
     },
@@ -43,17 +39,16 @@
       },
     },
     props: {
-      children: Array, 
-      adults: Array,
-      baby: Array
+      children_vip: Array, 
+      adults_vip: Array,
     },
   };
   </script>
     
     <style scoped>
 table {
-margin-top: 3%;
   width: 100%;
+  margin-top: 3%;
   border-collapse: collapse;
 }
 

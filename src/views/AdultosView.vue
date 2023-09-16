@@ -1,6 +1,19 @@
 <script setup>
+import { ref } from 'vue';
 import BotonPrecio from '../components/BotonPrecio.vue'
 import BotonHorario from '../components/BotonHorario.vue';
+import BotonVip from '../components/BotonVip.vue';
+const jsonLink = 'https://raw.githubusercontent.com/dulcek96/API/main/naatare.json';
+let adults = ref([]);
+let adults_vip = ref([]);
+
+fetch(jsonLink)
+  .then((res) => res.json())
+  .then((data) => {
+    adults.value = data.adults;
+    adults_vip.value= data.adults_vip;
+  });
+
 </script> 
 
 <template> 
@@ -15,7 +28,8 @@ import BotonHorario from '../components/BotonHorario.vue';
     </div>
     <p>Por lo general, las clases de natación para adultos suelen estar diseñadas para edades comprendidas de los 12 años en adelante.</p>
     <div class="grid-container">
-    <BotonPrecio></BotonPrecio>
+    <BotonPrecio :adults="adults"></BotonPrecio>
+    <BotonVip :adults_vip="adults_vip"></BotonVip>
     <BotonHorario></BotonHorario>
   </div>
 </div>
@@ -24,8 +38,11 @@ import BotonHorario from '../components/BotonHorario.vue';
 <style scoped>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-      grid-gap: 10px; /* Espacio entre las celdas */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
     }
 .AH31{
     color:#EBE741;
