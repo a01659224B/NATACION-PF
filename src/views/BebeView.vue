@@ -40,9 +40,11 @@ fetch(jsonLink)
 <style scoped>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-      grid-gap: 10px; /* Espacio entre las celdas */
-    }
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 10px; 
+      justify-items: center; 
+}
+   
 .AH31{
     color:#EBE741;
     font-family: 'Averia Serif Libre', cursive;;

@@ -41,11 +41,13 @@ fetch(jsonLink)
 </template>
 
 <style scoped>
+    
     .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      grid-gap: 10px; 
-    }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px;
+  justify-items: center; 
+}
 .AH31{
     color:#EBE741;
     font-family: 'Averia Serif Libre', cursive;;
