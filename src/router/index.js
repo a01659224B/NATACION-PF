@@ -23,6 +23,7 @@ const router = createRouter({
       name: 'Ninos',
       component: () => import('../views/NinosView.vue')
     }
+
   ]
 })
 

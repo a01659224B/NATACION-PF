@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+    padding: 5% 5%;
   }
   </style>
   

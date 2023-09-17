@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
      
   <div class="container text-center mt-4 cuadro">
@@ -38,15 +35,32 @@
 <style>
   .cuadro {
     background-color: #EBE741;
+    padding: 5%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  
   }
   .cuadroUno {
     background-color: #3C469E;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
   }
   .cuadroDos {
     background-color: #3C469E;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
   }
   .cuadroTres {
     background-color: #3C469E;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
   }
   .cuadror{
     font-family:  'Montserrat', sans-serif;
@@ -54,5 +68,8 @@
     text-decoration: none;
     
   }
-
 </style>
+
+
+
+
