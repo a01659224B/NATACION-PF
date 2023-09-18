@@ -69,9 +69,9 @@ import { RouterLink} from 'vue-router';
 }
 
 .bc-azul{
-      background-color: #3771C8;
+    background-color: #3771C8;
 }
- 
+
 .card col{
     padding:0px;
     margin:0px;

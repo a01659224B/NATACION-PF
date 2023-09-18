@@ -15,7 +15,6 @@
         <h5>4 meses a 3 años clase 30 minutos</h5>
       </div>
     </div>
-
     <div class="mt-4">
       <div class="cuadror">
         <h3 class="text-center">Requisitos</h3>
@@ -63,10 +62,15 @@
     color: #fff;
   }
   .cuadror{
-    font-family:  'Montserrat', sans-serif;
+    font-family: 'Averia Serif Libre', cursive;
     color:#3C469E;
-    text-decoration: none;
-    
+    text-decoration: none; 
+  }
+  .list-unstyled{
+    color:rgb(17, 16, 16);
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
   }
 </style>
 

@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="right">
-        <img src="src/assets/imagenes/Bebe.jpg">
+        <img src="src/assets/imagenes/naatare.jpeg">
     </div>
   </div>
     

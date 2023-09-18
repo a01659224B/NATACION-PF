@@ -22,8 +22,7 @@ const router = createRouter({
       path: '/Ninos',
       name: 'Ninos',
       component: () => import('../views/NinosView.vue')
-    }
-
+    },
   ]
 })
 
