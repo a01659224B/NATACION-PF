@@ -30,7 +30,7 @@ fetch(jsonLink)
       Nuestros instructores altamente calificados y apasionados te guiarán en cada paso del camino. Desde clases de arte y música hasta talleres de cocina y cursos de desarrollo personal, nuestro objetivo es inspirarte y empoderarte.
     </p>
     <div class="A14">
-      <img src="src/assets/imagenes/AdultoMayor.jpg">
+      <img src="@/assets/imagenes/AdultoMayor.jpg">
     </div>
     <p>Por lo general, las clases de natación para adultos suelen estar diseñadas para edades comprendidas de los 12 años en adelante.</p>
     <div class="grid-container">

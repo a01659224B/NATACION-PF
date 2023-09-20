@@ -29,7 +29,7 @@ fetch(jsonLink)
     <h3 class="AH32">para niños</h3>
     <p>Nuestras clases de natación para niños son un espacio de diversión y aprendizaje seguro en el agua. Diseñadas especialmente para los más pequeños, nuestras clases fomentan la confianza en el agua, enseñan habilidades fundamentales de natación y promueven la diversión mientras se adquieren conocimientos esenciales para una vida acuática segura y saludable. Nuestros instructores altamente capacitados se dedican a crear un ambiente amigable y alentador que inspira a los niños a desarrollar una conexión positiva con el agua desde una edad temprana. ¡Bienvenidos a un mundo de aventura acuática y aprendizaje emocionante para los más jóvenes!</p>
     <div class="A14">
-      <img src="src/assets/imagenes/Ninos.jpg">
+      <img src="@/assets/imagenes/Ninos.jpg">
     </div>
     <p>Por lo general, las clases de natación para niños suelen estar diseñadas para niños de edades comprendidas entre los 3 años y los 12 años. Sin embargo, esta edad puede variar según la política y enfoque de la instalación o programa de natación específico. </p>
     <div class="grid-container">

@@ -6,9 +6,9 @@
     <h3>Nosotros</h3>
     <p>Queremos compartir contigo nuestra pasión por el agua y la natación, así como destacar los valores y la misión que nos impulsan a ser tu destino preferido para disfrutar de esta maravillosa actividad.Nos enorgullecemos de contar con un equipo de instructores altamente calificados y apasionados por su trabajo. Cada uno de ellos está comprometido en brindarte la mejor experiencia de aprendizaje y acondicionamiento físico en el agua. Nuestro objetivo es no solo enseñarte a nadar de manera segura y eficiente, sino también inspirarte a amar y respetar el entorno acuático.</p>
     <div class="container4">
-      <img src="src/assets/imagenes/BajoAgua.png">
-      <img src="src/assets/imagenes/Locker.png">
-      <img src="src/assets/imagenes/Piscina.png">
+      <img src="@/assets/imagenes/BajoAgua.png">
+      <img src="@/assets/imagenes/Locker.png">
+      <img src="@/assets/imagenes/Piscina.png">
     </div>
   </div>
 </template>

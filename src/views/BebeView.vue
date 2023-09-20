@@ -27,7 +27,7 @@ fetch(jsonLink)
     <p>Nuestras clases están diseñadas específicamente para bebés, desde recién nacidos hasta sus primeros pasos.
        Cada sesión está llena de actividades divertidas y estimulantes que ayudan en el desarrollo temprano de su hijo. Desde canciones y juegos interactivos hasta actividades sensoriales, nuestro objetivo es fomentar el desarrollo cognitivo, emocional y motor de su bebé de una manera segura y enriquecedora.</p>
     <div class="A14">
-      <img src="src/assets/imagenes/Bebe.jpg">
+      <img src="@/assets/imagenes/Bebe.jpg">
     </div>
     <p>Por lo general, las clases de natación para bebés suelen estar diseñadas para edades comprendidas entre los 6 meses a los 3 años.</p>
     <div class="grid-container">

@@ -3,7 +3,7 @@
         <div class="container text-center">
         <div class="row align-items-center">
             <div class="col-2">
-            <img src="src/assets/imagenes/LogoColor.png" alt="Logo">
+            <img src="@/assets/imagenes/LogoColor.png" alt="Logo">
             </div> 
             <div class="col order-5 text-left"><h4>REDES</h4>
         <a href="https://t.me/tucanal" target="_blank" class="social-link">

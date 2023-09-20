@@ -15,7 +15,7 @@
     <div class="left">
       <div class="left-inner">
         <div>
-          <img src="src/assets/imagenes/LogoColor.png">
+          <img src="@/assets/imagenes/LogoColor.png">
         </div>
         <div class="texto1">Nada... </div>
         <div class="texto2">Nada... Por salud, deporte o</div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="right">
-        <img src="src/assets/imagenes/naatare.jpeg">
+        <img src="@/assets/imagenes/naatare.jpeg">
     </div>
   </div>
     
