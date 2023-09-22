@@ -10,13 +10,13 @@ import { RouterLink} from 'vue-router';
 
     <div class="col">
         <div class="card tarjeta">
-            <img src="src/assets/imagenes/Ninos.jpg" class="card-img-top" alt="Niños nadando">
+            <img src="@/assets/imagenes/Ninos.jpg" class="card-img-top" alt="Niños nadando">
         <div class="card-body bc-azul text-center">
         <h5 class="card-title">Natacion Niños</h5>
         <button
         class="custom-btn"
         @click="handleClick"
-        > <RouterLink :to="{ name: 'Ninos' }">Conoce más</RouterLink>
+        > <RouterLink :to="{ name: 'Ninos' }" >Conoce más</RouterLink>
         </button>
         </div>
         </div>       
@@ -24,7 +24,7 @@ import { RouterLink} from 'vue-router';
 
     <div class="col">
         <div class="card tarjeta">
-    <img src="src/assets/imagenes/AdultoMayor.jpg" class="card-img-top" alt="Adulto Mayor nadando">
+    <img src="@/assets/imagenes/AdultoMayor.jpg" class="card-img-top" alt="Adulto Mayor nadando">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Adultos</h5>
     <button
@@ -38,7 +38,7 @@ import { RouterLink} from 'vue-router';
     </div>
     <div class="col">
         <div class="card tarjeta">
-    <img src="src/assets/imagenes/Bebe.jpg" class="card-img-top" alt="Bebe nadando">
+    <img src="@/assets/imagenes/Bebe.jpg" class="card-img-top" alt="Bebe nadando">
     <div class="card-body bc-azul text-center">
     <h5 class="card-title">Natacion Bebes</h5>
     <button
@@ -85,7 +85,7 @@ import { RouterLink} from 'vue-router';
     margin-top: 2%;
     margin-bottom: 1%;
     color: white;
-    font-family: 'Averia Serif Libre', cursive;;
+    font-family: 'Averia Serif Libre', cursive;
     text-align: center;
     justify-content: space-evenly;
 }

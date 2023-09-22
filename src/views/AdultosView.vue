@@ -39,6 +39,9 @@ fetch(jsonLink)
     <BotonHorario :adultosh="adultosh"></BotonHorario>
   </div>
 </div>
+<div class="container1">
+<router-link to="/image1">Horarios de atencion</router-link>
+</div>
 </template> 
 
 <style scoped>
@@ -80,13 +83,21 @@ fetch(jsonLink)
     display: block; 
     margin: 0 auto; 
 }
-.container {
-  text-align: center; 
-  margin-top: 20px; 
-}
 
-.table {
-  width: 50%; 
-  border-width: 200px; 
+  .container1 {
+    background-color: #ebebeb;
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+
+  .container1:hover {
+    background: #2980B9;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
 }
 </style>

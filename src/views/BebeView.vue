@@ -25,7 +25,7 @@ fetch(jsonLink)
     <h3 class="AH31">Clases de Natacion</h3>
     <h3 class="AH32">para bebés  </h3>
     <p>Nuestras clases están diseñadas específicamente para bebés, desde recién nacidos hasta sus primeros pasos.
-       Cada sesión está llena de actividades divertidas y estimulantes que ayudan en el desarrollo temprano de su hijo. Desde canciones y juegos interactivos hasta actividades sensoriales, nuestro objetivo es fomentar el desarrollo cognitivo, emocional y motor de su bebé de una manera segura y enriquecedora.</p>
+      Cada sesión está llena de actividades divertidas y estimulantes que ayudan en el desarrollo temprano de su hijo. Desde canciones y juegos interactivos hasta actividades sensoriales, nuestro objetivo es fomentar el desarrollo cognitivo, emocional y motor de su bebé de una manera segura y enriquecedora.</p>
     <div class="A14">
       <img src="@/assets/imagenes/Bebe.jpg">
     </div>
@@ -34,6 +34,9 @@ fetch(jsonLink)
       <BotonPrecio :baby="baby"></BotonPrecio>
     <BotonHorario :bebesh="bebesh"></BotonHorario>
   </div>
+</div>
+<div class="container2">
+<router-link to="/image2">Horarios de atencion</router-link>
 </div>
 </template> 
 
@@ -44,7 +47,7 @@ fetch(jsonLink)
       grid-gap: 10px; 
       justify-items: center; 
 }
-   
+
 .AH31{
     color:#EBE741;
     font-family: 'Averia Serif Libre', cursive;;
@@ -76,13 +79,21 @@ fetch(jsonLink)
     display: block; 
     margin: 0 auto; 
 }
-.container {
-  text-align: center; 
-  margin-top: 20px; 
-}
 
-.table {
-  width: 50%; 
-  border-width: 200px; 
+.container2 {
+    background-color: #ebebeb;
+    justify-content: center;
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+.container2:hover {
+    background: #2980B9;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-     
   <div class="container text-center mt-4 cuadro">
     <div class="row align-items-center">
       <div class="col cuadroUno p-4">

@@ -1,7 +1,7 @@
 <template>
     <div>
       <button class="custom-btn BtnPrecio" @click="showTableData">
-        {{ buttonText }}
+        {{ buttonText }} 
       </button>
   
       <table v-if="showTable">
